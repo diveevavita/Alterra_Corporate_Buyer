@@ -1,0 +1,654 @@
+body {
+	display: block;
+	margin: 0px;
+	min-width: 320px;
+}
+
+@font-face {
+	font-family: "Roboto Regular"; 
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Roboto Medium"; 
+	src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+	font-family: "Roboto Bold"; 
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+
+body {
+	overflow-x: hidden;
+	min-width: 320px;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	font-size: 12px;
+	font-family: 'Arial',sans-serif;
+	padding: 0;
+	margin: 0;
+	background: #f6f6f6;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.page {
+	position: relative;
+	box-sizing: border-box;
+
+	z-index: 1;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: liga, kern;
+	background: #fff;
+	color: #333333;
+	min-width: 320px;
+	height: 100vh;
+}
+
+.page__content {
+	padding: 16px 0;
+}
+
+.container {
+	display: block;
+	width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.container__content {
+	position: relative;
+	z-index: 999;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0 0 100px;
+}
+
+.container__content {
+	padding-bottom: 10px !important;
+}
+
+.container__line {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 0 32px;
+}
+
+.breadcrumbs {
+	display: block;
+    width: calc(100% - 228px);
+    margin: 0;
+    padding: 0 8px 0 0;
+    list-style: none;
+    font-size: 13px;
+}
+
+ul li {
+	padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs__item {
+	display: inline;
+    vertical-align: bottom;
+}
+
+.breadcrumbs__item:after {
+	display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../svg/vector.svg) no-repeat 50%;
+    margin: 0 1px -4px;
+}
+
+.breadcrumbs__item:last-child:after {
+	display: none;
+}
+
+.breadcrumbs__item a {
+	color: rgba(0, 0, 0, .6);
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.corporate_buyer {
+	width: 100%;
+	margin-bottom: 117px;
+}
+
+.corporate_buyer-block {
+	background-color: #F2F5F7;
+	padding: 40px 30px;
+	margin-bottom: 80px;
+}
+
+.corporate_buyer-block_title {
+	font-family: "Roboto Regular";
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 1px;
+    line-height: 120%;
+    width: 100%;
+}
+
+.corporate_buyer-block_items {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.corporate_buyer-block_item {
+	background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 380px;
+    height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid;
+    border-color: #034899;
+    border-radius: 10px;
+}
+
+.corporate_buyer-block_item:hover {
+	background-color: #034899;
+}
+
+.corporate_buyer-block_item:focus {
+	background-color: #034899;
+}
+
+.corporate_buyer-block_item:hover > .corporate_buyer-block_item-title {
+	color: #ffffff;
+}
+
+.corporate_buyer-block_item:focus > .corporate_buyer-block_item-title {
+	color: #ffffff;
+}
+
+.corporate_buyer-block_item-pic:after {
+	position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  opacity: 0;
+	  background: rgba(0, 0, 0, .5);
+	  -webkit-transition: opacity 0.25s ease-in-out;
+	  transition: opacity 0.25s ease-in-out;
+	  content: "";
+	  z-index: 999;
+}
+
+.corporate_buyer-block_item:hover > .corporate_buyer-block_item-pic:after {
+	opacity: 1;
+}
+
+.corporate_buyer-block_item-title {
+	font-family: "Roboto Regular";
+    color: #1B1717;
+    font-size: 22px;
+    font-weight: 400;
+    padding: 25px 0 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 120%;
+    width: 100%;
+    margin: 0;
+    z-index: 10;
+    position: absolute;
+    width: 210px;
+}
+
+.corporate_buyer-block_item-pic {
+	padding-left: 180px;
+	border-radius: 0 10px 10px 0;
+}
+
+.corporate_buyer-registration {
+	padding: 0 30px;
+}
+
+.corporate_buyer-registration-title {
+	font-family: "Roboto Regular";
+    color: #1B1717;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 120%;
+    width: 100%;
+    margin: 0 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 1px;
+}
+
+.text_ex {
+	color: #E6330F;
+    margin: 0;
+}
+
+.corporate_buyer-registration-items {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.corporate_buyer-registration-item {
+	box-sizing: border-box;
+	width: 380px;
+	height: 238px;
+	padding: 0 50px;
+	box-shadow: 0 0 20px 0px #F4F4F4;
+    -webkit-box-shadow: 0 0 20px 0px #F4F4F4;
+    -moz-box-shadow: 0 0 20px 0px #F4F4F4;
+}
+
+.person_ {
+	display: inline;
+    margin-top: 80px;
+    margin-right: 20px;
+    height: 51px;
+}
+
+.registration-item_text {
+	display: inline-block;
+	font-family: "Roboto Regular";
+    color: #1B1717;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 230px;
+    margin: 0;
+}
+
+.phone_ {
+	display: inline;
+    margin-top: 60px;
+    margin-right: 20px;
+    height: 51px;
+}
+
+.text_bold {
+	font-weight: 700;
+}
+
+.mail_ {
+	display: inline;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 25px;
+}
+
+.location_ {
+	display: inline;
+    margin-top: 70px;
+    margin-right: 20px;
+    height: 25px;
+}
+
+.registration-item_text-store {
+	display: inline-block;
+	text-decoration: none;
+	font-family: "Roboto Regular";
+    color: #0070C9;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    width: 230px;
+    margin: 20px 0 0 50px;
+}
+
+.alterra_icon {
+	z-index: 3;
+    position: absolute;
+   	left: -1%;
+    bottom: 30px;
+    width: 150px;
+}
+
+@media (min-width: 641px) and (max-width: 1300px) {
+
+	.corporate_buyer-registration-item {
+		margin: 0 20px 30px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 1300px) {
+
+	.corporate_buyer-block_items {
+		justify-content: center;
+	}
+
+	.corporate_buyer-block_item {
+		margin: 0 30px 30px;
+	}
+
+	.corporate_buyer-registration-items {
+		justify-content: center;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+	.corporate_buyer {
+		margin-bottom: 80px;
+	}
+
+	.corporate_buyer-block {
+		margin-bottom: 50px;
+	}
+
+	.corporate_buyer-registration-item {
+		    margin: 0 0 30px;
+	}
+
+	.corporate_buyer-block {
+		padding: 30px 20px;
+	}
+
+	.corporate_buyer-block_title {
+		font-size: 38px;
+		margin: 0 0 40px;
+	}
+
+	.corporate_buyer-registration {
+		padding: 0 20px;
+	}
+
+	.corporate_buyer-registration-title {
+		font-size: 34px;
+		margin: 0 0 30px;
+	}
+
+	.alterra_icon {
+		width: 140px;
+		left: 3%;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+
+	.corporate_buyer {
+		margin-bottom: 60px;
+	}
+
+	.corporate_buyer-block {
+		margin-bottom: 50px;
+	}
+
+	.corporate_buyer-registration-item {
+		margin: 0 0 30px;
+		padding: 0 40px;
+	}
+
+	.corporate_buyer-block {
+		padding: 30px 20px;
+	}
+
+	.corporate_buyer-block_title {
+		font-size: 34px;
+		margin: 0 0 30px;
+	}
+
+	.corporate_buyer-registration {
+		padding: 0 20px;
+	}
+
+	.corporate_buyer-registration-title {
+		font-size: 32px;
+		margin: 0 0 30px;
+	}
+
+	.alterra_icon {
+		width: 140px;
+		left: 3%;
+	}
+
+	.corporate_buyer-block_item {
+		width: 350px;
+		height: 180px;
+	}
+
+	.corporate_buyer-block_item-title {
+		font-size: 20px;
+		padding: 20px 0 0 20px;
+	}
+
+	.corporate_buyer-block_item-pic {
+		padding-left: 170px;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 480px) {
+
+	.breadcrumbs {
+		width: 100%;
+	}
+
+	.corporate_buyer {
+		margin-bottom: 60px;
+	}
+
+	.corporate_buyer-block {
+		margin-bottom: 50px;
+	}
+
+	.corporate_buyer-registration-item {
+		margin: 0 0 30px;
+		padding: 0 30px;
+		height: 200px;
+	}
+
+	.corporate_buyer-block {
+		padding: 30px 20px;
+	}
+
+	.corporate_buyer-block_title {
+		font-size: 26px;
+		margin: 0 0 30px;
+	}
+
+	.corporate_buyer-registration {
+		padding: 0 20px;
+	}
+
+	.corporate_buyer-registration-title {
+		font-size: 24px;
+		margin: 0 0 30px;
+	}
+
+	.corporate_buyer-registration-items {
+		justify-content: center;
+	}
+
+	.registration-item_text {
+		width: 80%;
+		font-size: 18px;
+	}
+
+	.alterra_icon {
+		width: 100px;
+		left: 3%;
+	}
+
+	.corporate_buyer-block_items {
+		justify-content: center;
+	}
+
+	.corporate_buyer-block_item {
+		width: 300px;
+		height: 160px;
+	}
+
+	.corporate_buyer-block_item-title {
+		font-size: 18px;
+		padding: 10px 0 0 10px;
+		width: 50%;
+	}
+
+	.corporate_buyer-block_item-pic {
+		padding-left: 140px;
+	}
+
+	.person_ {
+		height: 40px;
+		margin-right: 10px;
+	}
+
+	.phone_ {
+		height: 40px;
+		margin-top: 50px;
+		margin-right: 10px;
+	}
+
+	.mail_ {
+		margin-right: 10px;
+	}
+
+	.location_ {
+		margin-top: 50px;
+    	margin-right: 10px;
+	}
+
+	.registration-item_text-store {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 401px) {
+
+	.container {
+		padding: 0 10px;
+	}
+
+	.breadcrumbs {
+		width: 100%;
+	}
+
+	.corporate_buyer {
+		margin-bottom: 60px;
+	}
+
+	.corporate_buyer-block {
+		margin-bottom: 50px;
+		padding: 30px 10px;
+	}
+
+	.corporate_buyer-registration-item {
+		margin: 0 0 30px;
+		padding: 0 20px;
+		height: 190px;
+		width: 260px;
+	}
+
+	.corporate_buyer-block_title {
+		font-size: 22px;
+		margin: 0 0 30px;
+	}
+
+	.corporate_buyer-registration {
+		padding: 0 10px;
+	}
+
+	.corporate_buyer-registration-title {
+		font-size: 22px;
+		margin: 0 0 30px;
+	}
+
+	.corporate_buyer-registration-items {
+		justify-content: center;
+	}
+
+	.registration-item_text {
+		width: 80%;
+		font-size: 18px;
+	}
+
+	.alterra_icon {
+		width: 100px;
+		height: 100px;
+		left: 3%;
+	}
+
+	.corporate_buyer-block_items {
+		justify-content: center;
+	}
+
+	.corporate_buyer-block_item-link {
+		width: 260px;
+	}
+
+	.corporate_buyer-block_item {
+		width: 260px;
+		height: 110px;
+	}
+
+	.corporate_buyer-block_item-title {
+		font-size: 18px;
+		padding: 5px 0 0 5px;
+		width: 50%;
+	}
+
+	.corporate_buyer-block_item-pic {
+		padding-left: 150px;
+	}
+
+	.person_ {
+		height: 40px;
+		width: 22px;
+		margin-right: 10px;
+		margin-top: 70px;
+	}
+
+	.phone_ {
+		width: 22px;
+		height: 60px;
+		margin-top: 40px;
+		margin-right: 10px;
+	}
+
+	.mail_ {
+		width: 22px;
+		margin-right: 10px;
+	}
+
+	.location_ {
+		width: 22px;
+		margin-top: 50px;
+    	margin-right: 10px;
+    	height: 25px;
+	}
+
+	.registration-item_text-store {
+		font-size: 18px;
+		width: 180px;
+    	margin: 20px 0 0 35px;
+    	line-height: 120%;
+	}
+}
