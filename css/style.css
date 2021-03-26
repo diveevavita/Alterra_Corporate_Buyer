@@ -176,12 +176,21 @@ ul li {
     border-radius: 10px;
 }
 
+.mask_shadow {
+	display: none;
+    position: absolute;
+    z-index: 3;
+    background-color: #2B2B2B;
+    opacity: 0.33;
+    border-radius: 10px;
+}
+
 .corporate_buyer-block_item:hover {
-	background-color: #034899;
+	background-color: #3f51b5;
 }
 
 .corporate_buyer-block_item:focus {
-	background-color: #034899;
+	background-color: #3f51b5;
 }
 
 .corporate_buyer-block_item:hover > .corporate_buyer-block_item-title {
@@ -192,22 +201,16 @@ ul li {
 	color: #ffffff;
 }
 
-.corporate_buyer-block_item-pic:after {
-	position: absolute;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  opacity: 0;
-	  background: rgba(0, 0, 0, .5);
-	  -webkit-transition: opacity 0.25s ease-in-out;
-	  transition: opacity 0.25s ease-in-out;
-	  content: "";
-	  z-index: 999;
+.corporate_buyer-block_item:hover > .mask_shadow {
+	display: block;
+	width: 382px;
+    height: 202px;
 }
 
-.corporate_buyer-block_item:hover > .corporate_buyer-block_item-pic:after {
-	opacity: 1;
+.corporate_buyer-block_item:focus > .mask_shadow {
+	display: block;
+	width: 382px;
+    height: 202px;
 }
 
 .corporate_buyer-block_item-title {
@@ -229,6 +232,7 @@ ul li {
 .corporate_buyer-block_item-pic {
 	padding-left: 180px;
 	border-radius: 0 10px 10px 0;
+	position: relative;
 }
 
 .corporate_buyer-registration {
@@ -443,6 +447,18 @@ ul li {
 	.corporate_buyer-block_item-pic {
 		padding-left: 170px;
 	}
+
+	.corporate_buyer-block_item:hover > .mask_shadow {
+		display: block;
+		width: 352px;
+	    height: 182px;
+	}
+
+	.corporate_buyer-block_item:focus > .mask_shadow {
+		display: block;
+		width: 352px;
+	    height: 182px;
+	}
 }
 
 @media (min-width: 401px) and (max-width: 480px) {
@@ -538,6 +554,18 @@ ul li {
 
 	.registration-item_text-store {
 		font-size: 18px;
+	}
+
+	.corporate_buyer-block_item:hover > .mask_shadow {
+		display: block;
+		width: 302px;
+	    height: 162px;
+	}
+
+	.corporate_buyer-block_item:focus > .mask_shadow {
+		display: block;
+		width: 352px;
+	    height: 182px;
 	}
 }
 
@@ -650,5 +678,17 @@ ul li {
 		width: 180px;
     	margin: 20px 0 0 35px;
     	line-height: 120%;
+	}
+
+	.corporate_buyer-block_item:hover > .mask_shadow {
+		display: block;
+		width: 262px;
+	    height: 112px;
+	}
+
+	.corporate_buyer-block_item:focus > .mask_shadow {
+		display: block;
+		width: 262px;
+	    height: 112px;
 	}
 }
